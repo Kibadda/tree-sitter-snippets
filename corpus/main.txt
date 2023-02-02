@@ -1,0 +1,24 @@
+======================================
+snippet without description
+======================================
+snippet fun
+  hello world
+---
+(snippets
+  (snippet
+    trigger: (string)
+    body: (snippet_body
+      (text))))
+
+======================================
+snippet with description
+======================================
+snippet fun "hi"
+  hello world
+---
+(snippets
+  (snippet
+    trigger: (string)
+    description: (string)
+    body: (snippet_body
+      (text))))
